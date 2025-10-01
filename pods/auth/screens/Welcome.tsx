@@ -7,67 +7,159 @@ import {
   spacing,
   verticalScale,
 } from '@shared/theme';
-import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import React, { useRef } from 'react';
+import {
+  Image,
+  ImageBackground,
+  StatusBar,
+  StyleSheet,
+  View,
+  TouchableOpacity,
+} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { AuthNavigationProp } from '../types';
 
 interface WelcomeProps {
   navigation: AuthNavigationProp<'Welcome'>;
 }
+
 const data = [
+  // {
+  //   key: 1,
+  //   title: 'Hayti News',
+  //   text: 'Daily News From Over 100 Black Publishers!',
+  //   image: IMAGES.auth.intro_image_1,
+  //   showAuthButtons: false,
+  // },
   {
     key: 1,
-    title: 'Welcome to SmartPlatform',
-    text: 'Discover a smarter way to manage your data and workflows. Let’s get started!',
-    image: IMAGES.auth.slider,
-    bg: '#59b2ab',
+    title: 'Hayti Podcasts',
+    text: 'Discover Over 3000 Black Podcasters!',
+    image: IMAGES.auth.intro_image_2,
+    showAuthButtons: true,
   },
   {
     key: 2,
-    title: 'Seamless Collaboration',
-    text: 'Connect with your team, share insights, and work together in real time—anytime, anywhere.',
-    image: IMAGES.auth.slider,
-    bg: '#d92029',
+    title: 'Hayti Marketplace',
+    text: 'Purchase Products From Hundreds Of Black-Owned Brands',
+    image: IMAGES.auth.intro_image_3,
+    showAuthButtons: true,
   },
 ];
+
 type Item = (typeof data)[0];
 
 const Welcome = ({ navigation: _navigation }: WelcomeProps) => {
+  const sliderRef = useRef<AppIntroSlider>(null);
+
+  const handleEmailAuth = () => {
+    _navigation.navigate('Login');
+  };
+
+  const handleGoogleAuth = () => {
+    // Implement Google auth
+    console.log('Google auth');
+  };
+
+  const handleAppleAuth = () => {
+    // Implement Apple auth
+    console.log('Apple auth');
+  };
+
+  const handleNext = () => {
+    sliderRef.current?.goToSlide(1);
+  };
+
   const _renderItem = ({ item }: { item: Item }) => {
     return (
-      <View
-        style={[
-          styles.slide,
-          {
-            backgroundColor: item.bg,
-          },
-        ]}
+      <ImageBackground
+        source={item.image}
+        style={styles.backgroundImage}
+        resizeMode="cover"
       >
-        <Text style={styles.title}>{item.title}</Text>
-        <Image source={item.image} style={styles.image} resizeMode="contain" />
-        <Text style={styles.text}>{item.text}</Text>
-      </View>
+        <View style={styles.contentContainer}>
+          <View style={styles.titleView}>
+            <Image
+              source={IMAGES.auth.hayti_icon_white_bg_rounded}
+              resizeMode="contain"
+              style={styles.haytiIcon}
+            />
+            <Text style={styles.title}>{item.title}</Text>
+          </View>
+          <Text style={styles.text}>{item.text}</Text>
+
+          {item.showAuthButtons ? (
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity
+                style={styles.authButton}
+                onPress={handleEmailAuth}
+                activeOpacity={0.8}
+              >
+                <Image
+                  source={IMAGES.auth.email_icon} // You'll need to add this icon
+                  style={styles.buttonIcon}
+                />
+                <Text style={styles.authButtonText}>Continue With Email</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.authButton}
+                onPress={handleGoogleAuth}
+                activeOpacity={0.8}
+              >
+                <Image
+                  source={IMAGES.auth.google_icon} // You'll need to add this icon
+                  style={styles.buttonIcon}
+                />
+                <Text style={styles.authButtonText}>Continue With Google</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.authButton}
+                onPress={handleAppleAuth}
+                activeOpacity={0.8}
+              >
+                <Image
+                  source={IMAGES.auth.apple_icon} // You'll need to add this icon
+                  style={styles.buttonIcon}
+                />
+                <Text style={styles.authButtonText}>Continue With Apple</Text>
+              </TouchableOpacity>
+            </View>
+          ) : (
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity
+                style={styles.nextButton}
+                onPress={handleNext}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.nextButtonText}>Next</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        </View>
+      </ImageBackground>
     );
   };
 
   const _keyExtractor = (item: Item) => item.title;
-  const renderButton = (type: 'next' | 'done') => (
-    <Text
-      style={type === 'done' ? styles.doneText : styles.nextText}
-      tx={type === 'done' ? 'login.done' : 'login.next'}
-    />
-  );
+
   return (
     <Layout fullScreen={true}>
-      <Layout.Body scrollable={true} style={styles.noPadding}>
+      <StatusBar barStyle="light-content" />
+      <Layout.Body style={styles.noPadding}>
         <AppIntroSlider
+          ref={sliderRef}
           keyExtractor={_keyExtractor}
           renderItem={_renderItem}
           data={data}
-          renderNextButton={() => renderButton('next')}
-          renderDoneButton={() => renderButton('done')}
-          onDone={() => _navigation.navigate('Login')}
+          renderNextButton={() => null}
+          renderDoneButton={() => null}
+          showDoneButton={false}
+          showNextButton={false}
+          dotStyle={styles.dot}
+          activeDotStyle={styles.activeDot}
+          bottomButton={true}
         />
       </Layout.Body>
     </Layout>
@@ -75,38 +167,94 @@ const Welcome = ({ navigation: _navigation }: WelcomeProps) => {
 };
 
 const styles = StyleSheet.create({
-  slide: {
+  backgroundImage: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-  image: {
-    width: moderateScale(300),
-    height: moderateScale(300),
-    marginVertical: verticalScale(spacing.m),
+  contentContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    paddingBottom: moderateScale(75),
+  },
+  haytiIcon: {
+    marginRight: moderateScale(8),
+    height: verticalScale(35),
+    width: moderateScale(35),
+  },
+  titleView: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: verticalScale(spacing.m),
   },
   text: {
-    color: 'rgba(255, 255, 255, 0.8)',
+    color: 'rgba(255, 255, 255, 1)',
     textAlign: 'center',
+    fontSize: moderateScale(spacing.m),
+    fontFamily: fonts.semiBold,
+    marginHorizontal: moderateScale(spacing.xl),
+    marginBottom: verticalScale(spacing.xl),
   },
   title: {
-    fontSize: moderateScale(spacing.l),
-    fontFamily: fonts.medium,
+    fontSize: moderateScale(spacing.xl),
+    fontFamily: fonts.black,
     color: colors.background,
     textAlign: 'center',
   },
   noPadding: {
     padding: 0,
   },
-  doneText: {
-    fontSize: moderateScale(spacing.s),
+  buttonContainer: {
+    paddingHorizontal: moderateScale(spacing.m),
+    gap: moderateScale(12),
+  },
+  buttonIcon: {
+    marginRight: moderateScale(10),
+    resizeMode: 'contain',
+  },
+  authButton: {
+    backgroundColor: colors.background,
+    borderRadius: moderateScale(25),
+    paddingVertical: moderateScale(14),
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  authButtonText: {
+    fontSize: moderateScale(15),
     fontFamily: fonts.semiBold,
+    color: '#333',
+  },
+  nextButton: {
+    backgroundColor: '#00C853',
+    borderRadius: moderateScale(25),
+    paddingVertical: moderateScale(14),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  nextButtonText: {
+    fontSize: moderateScale(16),
+    fontFamily: fonts.bold,
     color: colors.background,
   },
-  nextText: {
-    fontSize: moderateScale(spacing.s),
-    fontFamily: fonts.light,
-    color: colors.background,
+  dot: {
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    width: moderateScale(8),
+    height: moderateScale(8),
+    borderRadius: moderateScale(4),
+  },
+  activeDot: {
+    backgroundColor: '#00C853',
+    width: moderateScale(8),
+    height: moderateScale(8),
+    borderRadius: moderateScale(4),
   },
 });
 

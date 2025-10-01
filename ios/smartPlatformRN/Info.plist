@@ -45,15 +45,15 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Outfit-Black.ttf</string>
-		<string>Outfit-Bold.ttf</string>
-		<string>Outfit-ExtraBold.ttf</string>
-		<string>Outfit-ExtraLight.ttf</string>
-		<string>Outfit-Light.ttf</string>
-		<string>Outfit-Medium.ttf</string>
-		<string>Outfit-Regular.ttf</string>
-		<string>Outfit-SemiBold.ttf</string>
-		<string>Outfit-Thin.ttf</string>
+		<string>SF-Pro-Text-Black.otf</string>
+		<string>SF-Pro-Text-Bold.otf</string>
+		<string>SF-Pro-Text-Heavy.otf</string>
+		<string>SF-Pro-Text-Light.otf</string>
+		<string>SF-Pro-Text-Medium.otf</string>
+		<string>SF-Pro-Text-Regular.otf</string>
+		<string>SF-Pro-Text-Semibold.otf</string>
+		<string>SF-Pro-Text-Thin.otf</string>
+		<string>SF-Pro-Text-Ultralight.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>BootSplash</string>

@@ -1,7 +1,7 @@
 import { ColorPalette } from '../types/ColorPalette';
 
 export const colors: ColorPalette = {
-  primary: '#d92029',
+  primary: '#00B050',
   secondary: '#001D51',
   background: '#FFFFFF',
   text: '#222222',

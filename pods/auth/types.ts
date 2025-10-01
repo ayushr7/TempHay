@@ -1,6 +1,7 @@
 import type { StackNavigationProp } from '@react-navigation/stack';
 
 export type AuthStackParamList = {
+  FirstPage: undefined;
   Login: undefined;
   SignUp: undefined;
   ForgotPassword: undefined;

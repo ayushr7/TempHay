@@ -8,47 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		07270548F2504C42B63D2A49 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6328BB36851A427A90A3BF86 /* Colors.xcassets */; };
-		0C80B921A6F3F58F76C31292 /* libPods-smartPlatformRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-smartPlatformRN.a */; };
-		117E696A7DBE42CAAC0077ED /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCB341CBBE144BE3BF7D189D /* Outfit-SemiBold.ttf */; };
+		0D25FE7BF1B24527ADB4D53A /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04407300021B483C84408D5C /* SF-Pro-Text-Light.otf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		34C4A9A0A5A846CCB72FAF35 /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171D182FA013496DA8DE2000 /* Outfit-Medium.ttf */; };
+		5BBF5482CA7D4E25B2DAF729 /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7909B6BFF56442148D7B4372 /* SF-Pro-Text-Ultralight.otf */; };
+		6E10D2E5688042FBBEA11663 /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B88F5649B22435D8F990844 /* SF-Pro-Text-Black.otf */; };
+		703B44E496954679B1D41022 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7938F717A1594C559220744E /* SF-Pro-Text-Regular.otf */; };
+		746CDD38593048B987885432 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C938A17830A4A8CA58C22EB /* SF-Pro-Text-Semibold.otf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
-		78DBDC8207D94F21A789F6FF /* Outfit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53B4F3E2506D4E67A00B69E4 /* Outfit-Thin.ttf */; };
+		77AD5459B7214DA6BC43F950 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614A1BA99D7F4A1BB6E71F43 /* SF-Pro-Text-Bold.otf */; };
 		7EF0580FCE6AB0C0A821995A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		85A6953A353B429B86A842B1 /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 321BC8A5A8D84D139835A587 /* Outfit-Light.ttf */; };
-		88AC3BD6F34841298D347333 /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B777FC9A436E4757B928B5CC /* Outfit-Bold.ttf */; };
+		9606E150BD8A45F0A5BF79D0 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 357880849BE1414DAB9B2A0C /* SF-Pro-Text-Heavy.otf */; };
 		A624D6652E27A5D400790C90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A624D6642E27A5D400790C90 /* GoogleService-Info.plist */; };
 		AE63CA44A2E540D1877D49D2 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCFDCE55CAF47EDA1FFEF7A /* BootSplash.storyboard */; };
-		B99C573BEC7B44F99399A7F4 /* Outfit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4870B68BBE4346C0867F1BC1 /* Outfit-Black.ttf */; };
-		D6DB16DFAFE64625A9995D2D /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA07F954FBA54D6B940E4A42 /* Outfit-Regular.ttf */; };
-		EF1CCF039C3B4145995C371A /* Outfit-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA200833C96E4002A97182F1 /* Outfit-ExtraBold.ttf */; };
-		FD62EFF88509400B9E538B6C /* Outfit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C27ED987FA234DC4B843C6D0 /* Outfit-ExtraLight.ttf */; };
+		C2101516B0B94BB5B3EC52ED /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 559C9DD5C8E44F8DB803D8F4 /* SF-Pro-Text-Thin.otf */; };
+		EC4A4411FD6E71DF892B01CB /* libPods-smartPlatformRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43128A1AB31B03BCE6A47E09 /* libPods-smartPlatformRN.a */; };
+		F760CC2129E24E39AE30124F /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A555CB820A114E179C917685 /* SF-Pro-Text-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04407300021B483C84408D5C /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Light.otf"; path = "../src/assets/fonts/SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* smartPlatformRN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartPlatformRN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = smartPlatformRN/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = smartPlatformRN/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = smartPlatformRN/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		171D182FA013496DA8DE2000 /* Outfit-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Medium.ttf"; path = "../src/assets/fonts/Outfit-Medium.ttf"; sourceTree = "<group>"; };
-		321BC8A5A8D84D139835A587 /* Outfit-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Light.ttf"; path = "../src/assets/fonts/Outfit-Light.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-smartPlatformRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartPlatformRN.debug.xcconfig"; path = "Target Support Files/Pods-smartPlatformRN/Pods-smartPlatformRN.debug.xcconfig"; sourceTree = "<group>"; };
-		4870B68BBE4346C0867F1BC1 /* Outfit-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Black.ttf"; path = "../src/assets/fonts/Outfit-Black.ttf"; sourceTree = "<group>"; };
-		53B4F3E2506D4E67A00B69E4 /* Outfit-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Thin.ttf"; path = "../src/assets/fonts/Outfit-Thin.ttf"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-smartPlatformRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartPlatformRN.release.xcconfig"; path = "Target Support Files/Pods-smartPlatformRN/Pods-smartPlatformRN.release.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-smartPlatformRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smartPlatformRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		357880849BE1414DAB9B2A0C /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Heavy.otf"; path = "../src/assets/fonts/SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		43128A1AB31B03BCE6A47E09 /* libPods-smartPlatformRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smartPlatformRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B88F5649B22435D8F990844 /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Black.otf"; path = "../src/assets/fonts/SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		559C9DD5C8E44F8DB803D8F4 /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Thin.otf"; path = "../src/assets/fonts/SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
+		614A1BA99D7F4A1BB6E71F43 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		6328BB36851A427A90A3BF86 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = smartPlatformRN/Colors.xcassets; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = smartPlatformRN/AppDelegate.swift; sourceTree = "<group>"; };
+		7909B6BFF56442148D7B4372 /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Ultralight.otf"; path = "../src/assets/fonts/SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		7938F717A1594C559220744E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = smartPlatformRN/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BCD176CCE4B865D6641905 /* Pods-smartPlatformRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartPlatformRN.release.xcconfig"; path = "Target Support Files/Pods-smartPlatformRN/Pods-smartPlatformRN.release.xcconfig"; sourceTree = "<group>"; };
+		8C938A17830A4A8CA58C22EB /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Semibold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		A555CB820A114E179C917685 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Medium.otf"; path = "../src/assets/fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		A624D6642E27A5D400790C90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A624D6662E27BD6200790C90 /* smartPlatformRN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = smartPlatformRN.entitlements; path = smartPlatformRN/smartPlatformRN.entitlements; sourceTree = "<group>"; };
-		B777FC9A436E4757B928B5CC /* Outfit-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Bold.ttf"; path = "../src/assets/fonts/Outfit-Bold.ttf"; sourceTree = "<group>"; };
-		BA200833C96E4002A97182F1 /* Outfit-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-ExtraBold.ttf"; path = "../src/assets/fonts/Outfit-ExtraBold.ttf"; sourceTree = "<group>"; };
-		BCB341CBBE144BE3BF7D189D /* Outfit-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-SemiBold.ttf"; path = "../src/assets/fonts/Outfit-SemiBold.ttf"; sourceTree = "<group>"; };
-		C27ED987FA234DC4B843C6D0 /* Outfit-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-ExtraLight.ttf"; path = "../src/assets/fonts/Outfit-ExtraLight.ttf"; sourceTree = "<group>"; };
-		EA07F954FBA54D6B940E4A42 /* Outfit-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Regular.ttf"; path = "../src/assets/fonts/Outfit-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED891C1E4CA6AE9BBF02AEDF /* Pods-smartPlatformRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartPlatformRN.debug.xcconfig"; path = "Target Support Files/Pods-smartPlatformRN/Pods-smartPlatformRN.debug.xcconfig"; sourceTree = "<group>"; };
 		FFCFDCE55CAF47EDA1FFEF7A /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = smartPlatformRN/BootSplash.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-smartPlatformRN.a in Frameworks */,
+				EC4A4411FD6E71DF892B01CB /* libPods-smartPlatformRN.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-smartPlatformRN.a */,
+				43128A1AB31B03BCE6A47E09 /* libPods-smartPlatformRN.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,15 +122,15 @@
 		8DDC04D557E743C8AA881CAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4870B68BBE4346C0867F1BC1 /* Outfit-Black.ttf */,
-				B777FC9A436E4757B928B5CC /* Outfit-Bold.ttf */,
-				BA200833C96E4002A97182F1 /* Outfit-ExtraBold.ttf */,
-				C27ED987FA234DC4B843C6D0 /* Outfit-ExtraLight.ttf */,
-				321BC8A5A8D84D139835A587 /* Outfit-Light.ttf */,
-				171D182FA013496DA8DE2000 /* Outfit-Medium.ttf */,
-				EA07F954FBA54D6B940E4A42 /* Outfit-Regular.ttf */,
-				BCB341CBBE144BE3BF7D189D /* Outfit-SemiBold.ttf */,
-				53B4F3E2506D4E67A00B69E4 /* Outfit-Thin.ttf */,
+				4B88F5649B22435D8F990844 /* SF-Pro-Text-Black.otf */,
+				614A1BA99D7F4A1BB6E71F43 /* SF-Pro-Text-Bold.otf */,
+				357880849BE1414DAB9B2A0C /* SF-Pro-Text-Heavy.otf */,
+				04407300021B483C84408D5C /* SF-Pro-Text-Light.otf */,
+				A555CB820A114E179C917685 /* SF-Pro-Text-Medium.otf */,
+				7938F717A1594C559220744E /* SF-Pro-Text-Regular.otf */,
+				8C938A17830A4A8CA58C22EB /* SF-Pro-Text-Semibold.otf */,
+				559C9DD5C8E44F8DB803D8F4 /* SF-Pro-Text-Thin.otf */,
+				7909B6BFF56442148D7B4372 /* SF-Pro-Text-Ultralight.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -138,8 +138,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-smartPlatformRN.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-smartPlatformRN.release.xcconfig */,
+				ED891C1E4CA6AE9BBF02AEDF /* Pods-smartPlatformRN.debug.xcconfig */,
+				84BCD176CCE4B865D6641905 /* Pods-smartPlatformRN.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,13 +151,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "smartPlatformRN" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				5AF6157350E11FE5D352F28E /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				3AB0B891A2C280557547DDF5 /* [CP] Embed Pods Frameworks */,
+				A27DFF4B76A883B710FDD30B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,18 +207,18 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A624D6652E27A5D400790C90 /* GoogleService-Info.plist in Resources */,
-				B99C573BEC7B44F99399A7F4 /* Outfit-Black.ttf in Resources */,
-				88AC3BD6F34841298D347333 /* Outfit-Bold.ttf in Resources */,
-				EF1CCF039C3B4145995C371A /* Outfit-ExtraBold.ttf in Resources */,
-				FD62EFF88509400B9E538B6C /* Outfit-ExtraLight.ttf in Resources */,
-				85A6953A353B429B86A842B1 /* Outfit-Light.ttf in Resources */,
-				34C4A9A0A5A846CCB72FAF35 /* Outfit-Medium.ttf in Resources */,
-				D6DB16DFAFE64625A9995D2D /* Outfit-Regular.ttf in Resources */,
-				117E696A7DBE42CAAC0077ED /* Outfit-SemiBold.ttf in Resources */,
-				78DBDC8207D94F21A789F6FF /* Outfit-Thin.ttf in Resources */,
 				AE63CA44A2E540D1877D49D2 /* BootSplash.storyboard in Resources */,
 				07270548F2504C42B63D2A49 /* Colors.xcassets in Resources */,
 				7EF0580FCE6AB0C0A821995A /* PrivacyInfo.xcprivacy in Resources */,
+				6E10D2E5688042FBBEA11663 /* SF-Pro-Text-Black.otf in Resources */,
+				77AD5459B7214DA6BC43F950 /* SF-Pro-Text-Bold.otf in Resources */,
+				9606E150BD8A45F0A5BF79D0 /* SF-Pro-Text-Heavy.otf in Resources */,
+				0D25FE7BF1B24527ADB4D53A /* SF-Pro-Text-Light.otf in Resources */,
+				F760CC2129E24E39AE30124F /* SF-Pro-Text-Medium.otf in Resources */,
+				703B44E496954679B1D41022 /* SF-Pro-Text-Regular.otf in Resources */,
+				746CDD38593048B987885432 /* SF-Pro-Text-Semibold.otf in Resources */,
+				C2101516B0B94BB5B3EC52ED /* SF-Pro-Text-Thin.otf in Resources */,
+				5BBF5482CA7D4E25B2DAF729 /* SF-Pro-Text-Ultralight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +227,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -237,11 +237,11 @@
 			name = "Bundle React Native code and images";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		3AB0B891A2C280557547DDF5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +258,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartPlatformRN/Pods-smartPlatformRN-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		5AF6157350E11FE5D352F28E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,7 +280,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		A27DFF4B76A883B710FDD30B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,7 +313,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-smartPlatformRN.debug.xcconfig */;
+			baseConfigurationReference = ED891C1E4CA6AE9BBF02AEDF /* Pods-smartPlatformRN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -344,7 +344,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-smartPlatformRN.release.xcconfig */;
+			baseConfigurationReference = 84BCD176CCE4B865D6641905 /* Pods-smartPlatformRN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
