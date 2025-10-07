@@ -24,22 +24,22 @@ interface WelcomeProps {
 }
 
 const data = [
-  // {
-  //   key: 1,
-  //   title: 'Hayti News',
-  //   text: 'Daily News From Over 100 Black Publishers!',
-  //   image: IMAGES.auth.intro_image_1,
-  //   showAuthButtons: false,
-  // },
   {
     key: 1,
-    title: 'Hayti Podcasts',
-    text: 'Discover Over 3000 Black Podcasters!',
-    image: IMAGES.auth.intro_image_2,
-    showAuthButtons: true,
+    title: 'Hayti News',
+    text: 'Daily News From Over 100 Black Publishers!',
+    image: IMAGES.auth.intro_image_1,
+    showAuthButtons: false,
   },
   {
     key: 2,
+    title: 'Hayti Podcasts',
+    text: 'Discover Over 3000 Black Podcasters!',
+    image: IMAGES.auth.intro_image_2,
+    showAuthButtons: false,
+  },
+  {
+    key: 3,
     title: 'Hayti Marketplace',
     text: 'Purchase Products From Hundreds Of Black-Owned Brands',
     image: IMAGES.auth.intro_image_3,
@@ -51,6 +51,8 @@ type Item = (typeof data)[0];
 
 const Welcome = ({ navigation: _navigation }: WelcomeProps) => {
   const sliderRef = useRef<AppIntroSlider>(null);
+
+  const [currentSlide, setCurrentSlide] = React.useState(0);
 
   const handleEmailAuth = () => {
     _navigation.navigate('Login');
@@ -67,7 +69,11 @@ const Welcome = ({ navigation: _navigation }: WelcomeProps) => {
   };
 
   const handleNext = () => {
-    sliderRef.current?.goToSlide(1);
+    const nextSlide = currentSlide + 1;
+    if (nextSlide < data.length) {
+      sliderRef.current?.goToSlide(nextSlide);
+      setCurrentSlide(nextSlide); // Update state immediately after navigation
+    }
   };
 
   const _renderItem = ({ item }: { item: Item }) => {
@@ -111,7 +117,7 @@ const Welcome = ({ navigation: _navigation }: WelcomeProps) => {
                   source={IMAGES.auth.google_icon} // You'll need to add this icon
                   style={styles.buttonIcon}
                 />
-                <Text style={styles.authButtonText}>Continue With Google</Text>
+                <Text style={styles.authButtonText}>Continue With Email</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
@@ -160,6 +166,7 @@ const Welcome = ({ navigation: _navigation }: WelcomeProps) => {
           dotStyle={styles.dot}
           activeDotStyle={styles.activeDot}
           bottomButton={true}
+          onSlideChange={index => setCurrentSlide(index)}
         />
       </Layout.Body>
     </Layout>

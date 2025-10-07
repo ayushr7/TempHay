@@ -11,7 +11,7 @@ import { AppNavigator } from './navigation';
 import { ThemeProvider } from '@src/theme/ThemeProvider';
 import { initI18n } from './i18n/i18n';
 import { Provider } from 'react-redux';
-import { store } from '@redux/store';
+import { store, persistor } from '@redux/store';
 import { useAppDispatch } from '@redux/hooks';
 import { setTheme } from '@redux/slices/themeSlice';
 import BootSplash from 'react-native-bootsplash';
@@ -19,6 +19,7 @@ import { KeyboardProvider } from 'react-native-keyboard-controller';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import ConnectionStatusStrip from './components/ConnectionStatusStrip';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import { PersistGate } from 'redux-persist/integration/react';
 
 const AppContent = () => {
   const dispatch = useAppDispatch();
@@ -27,7 +28,8 @@ const AppContent = () => {
   // Initialize Google Sign-In if require otherwise remove this
   useEffect(() => {
     GoogleSignin.configure({
-      webClientId: '749712540931-iqd969jn5jjr0r81mtoc266060eh73nm.apps.googleusercontent.com', // TODO: Replace with your actual web client ID
+      webClientId:
+        '749712540931-iqd969jn5jjr0r81mtoc266060eh73nm.apps.googleusercontent.com', // TODO: Replace with your actual web client ID
       offlineAccess: false,
     });
   }, []);
@@ -69,12 +71,14 @@ function App() {
 
   return (
     <Provider store={store}>
-      <SafeAreaProvider>
-        <KeyboardProvider>
-          <AppContent />
-          <ConnectionStatusStrip />
-        </KeyboardProvider>
-      </SafeAreaProvider>
+      <PersistGate loading={null} persistor={persistor}>
+        <SafeAreaProvider>
+          <KeyboardProvider>
+            <AppContent />
+            <ConnectionStatusStrip />
+          </KeyboardProvider>
+        </SafeAreaProvider>
+      </PersistGate>
     </Provider>
   );
 }

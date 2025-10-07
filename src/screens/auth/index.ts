@@ -1,3 +1,4 @@
 import FirstPage from './FirstPage';
+import VideoSplash from './VideoSplash';
 
-export { FirstPage };
+export { FirstPage, VideoSplash };

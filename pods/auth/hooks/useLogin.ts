@@ -1,5 +1,5 @@
 import { useAppDispatch } from '@src/redux/hooks';
-import { setUser } from '@src/redux/slices/userSlice';
+import { setFirstLaunchComplete, setUser } from '@src/redux/slices/userSlice';
 import { useState } from 'react';
 
 interface UseLogin {
@@ -31,6 +31,7 @@ export function useLogin(): UseLogin {
       // Simulate API call
       await new Promise(_res => {
         dispatch(setUser(email));
+        dispatch(setFirstLaunchComplete(true));
       });
       // Handle successful login here
     } catch (e: any) {

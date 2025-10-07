@@ -1,6 +1,6 @@
 import type { AuthNavigationProp } from '../types';
 import React from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 import { Layout, Text, Button, TextInput } from '@shared/index';
 import {
   fonts,
@@ -26,15 +26,17 @@ const Login = ({ navigation: _navigation }: LoginProps) => {
 
   return (
     <Layout>
-      <Layout.Header />
-      <Layout.Body scrollable={true}>
-        <Image
-          source={IMAGES.auth.logo}
-          style={styles.logo}
-          resizeMode="contain"
-        />
-        <Text variant="title" tx="login.title" />
-        <Text variant="subtitle" style={styles.subtitle} tx={'login.welcome'} />
+      {/* <Layout.Header /> */}
+      <Layout.Body style={styles.container}>
+        <View style={styles.headerContainer}>
+          <Image
+            source={IMAGES.auth.logo_whitebg}
+            style={styles.logo}
+            resizeMode="contain"
+          />
+          <Text variant="title" tx="login.title" />
+        </View>
+        {/* <Text variant="subtitle" style={styles.subtitle} tx={'login.welcome'} /> */}
 
         <TextInput
           value={email}
@@ -90,12 +92,23 @@ const Login = ({ navigation: _navigation }: LoginProps) => {
 
 const getStyles = (theme: any) =>
   StyleSheet.create({
+    container: {
+      paddingVertical: verticalScale(spacing.m),
+      justifyContent: 'center',
+    },
+    headerContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: moderateScale(10),
+      justifyContent: 'center',
+      marginBottom: verticalScale(spacing.xxl),
+    },
     logo: {
-      width: moderateScale(80),
-      height: moderateScale(80),
+      width: moderateScale(50),
+      height: moderateScale(50),
       alignSelf: 'center',
-      marginBottom: verticalScale(spacing.l),
       borderRadius: moderateScale(5),
+      // marginBottom: verticalScale(spacing.m),
     },
     subtitle: {
       marginBottom: verticalScale(spacing.l),

@@ -37,6 +37,7 @@ const Button: React.FC<ButtonProps> = ({
     <TouchableOpacity
       style={[styles.button, style, disabled && styles.disabled]}
       activeOpacity={0.8}
+      disabled={disabled}
       {...props}
     >
       {leftIcon && <>{leftIcon}</>}

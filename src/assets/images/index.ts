@@ -1,6 +1,7 @@
 export const IMAGES = {
   auth: {
     logo: require('./logo.png'),
+    logo_whitebg: require('./logo_whitebg.png'),
     slider: require('./slider.png'),
     intro_image_1: require('./intro_image_1.jpg'),
     intro_image_2: require('./intro_image_2.jpg'),
