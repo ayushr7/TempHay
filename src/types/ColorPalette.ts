@@ -2,6 +2,7 @@ export interface ColorPalette {
   primary: string;
   secondary: string;
   background: string;
+  tabBackground: string;
   text: string;
   border: string;
   error: string;
@@ -13,4 +14,6 @@ export interface ColorPalette {
   tabInactive: string;
   internetStripOn: string;
   internetStripOff: string;
+  activeTabBackground: string;
+  white: string;
 }

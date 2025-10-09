@@ -1,17 +1,16 @@
-import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { IMAGES, useTheme } from '@shared/theme';
+import { CustomTabBar } from '@src/components';
+import { HomeScreen, Podcasts, ProfileScreen } from '@src/screens';
+import React from 'react';
 import { Image } from 'react-native';
-import { Home, Profile,CalendarIC } from '@src/assets/svg';
-import HomeScreen from '@src/screens/HomeScreen';
-import ProfileScreen from '@src/screens/ProfileScreen';
-import { useTheme } from '@shared/theme';
-import { ChatList } from '@pods/chat/index';
-import ScheduleScreen from '@src/screens/ScheduleScreen';
 export type TabParamList = {
   Home: undefined;
   Profile: undefined;
   Chat: undefined;
-  Calendar:undefined
+  Calendar: undefined;
+  // News: undefined;
+  Podcasts: undefined;
 };
 
 export type TabImages = {
@@ -19,6 +18,8 @@ export type TabImages = {
   Profile: any;
   Calendar: any;
   Chat: any;
+  // News: any;
+  Podcasts: any;
 };
 
 const Tab = createBottomTabNavigator<TabParamList>();
@@ -30,11 +31,7 @@ function renderTabIcon(
   tabImages: TabImages,
 ) {
   const Icon = tabImages[routeName as keyof TabImages];
-  // If it's a function/component (SVG), render as component
-  if (typeof Icon === 'function') {
-    return <Icon width={size} height={size} fill={color} />;
-  }
-  // Otherwise, treat as image source
+  // Treat as image source (since we're now using static images from IMAGES)
   return (
     <Image
       source={Icon}
@@ -46,10 +43,12 @@ function renderTabIcon(
 //add custom images here
 function getTabImages() {
   return {
-    Home: Home,
-    Profile: Profile,
-    Chat: Profile,
-    Calendar:CalendarIC
+    Home: IMAGES.dash.home_icon,
+    Profile: IMAGES.dash.profile_icon,
+    News: IMAGES.dash.news_icon,
+    Chat: IMAGES.dash.profile_icon,
+    Calendar: IMAGES.dash.podcasts_icon,
+    Podcasts: IMAGES.dash.podcasts_icon,
   };
 }
 
@@ -63,12 +62,9 @@ const TabNavigator: React.FC<TabNavigatorProps> = ({
   const { theme } = useTheme();
   return (
     <Tab.Navigator
+      tabBar={props => <CustomTabBar {...props} />}
       screenOptions={({ route }) => ({
         headerShown: false,
-        tabBarStyle: {
-          backgroundColor: theme.colors.background,
-          borderTopColor: theme.colors.border,
-        },
         tabBarActiveTintColor: theme.colors.tabActive,
         tabBarInactiveTintColor: theme.colors.tabInactive,
         tabBarIcon: ({ color, size }) =>
@@ -76,10 +72,27 @@ const TabNavigator: React.FC<TabNavigatorProps> = ({
       })}
       initialRouteName="Home"
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
-      <Tab.Screen name="Calendar" component={ScheduleScreen} />
-      <Tab.Screen name="Chat" component={ChatList} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ tabBarLabel: 'Home' }}
+      />
+      {/* <Tab.Screen
+        name="News"
+        component={News}
+        options={{ tabBarLabel: 'News' }}
+      /> */}
+      <Tab.Screen
+        name="Podcasts"
+        component={Podcasts}
+        options={{ tabBarLabel: 'Podcasts' }}
+      />
+      {/* <Tab.Screen name="Chat" component={ChatList} /> */}
+      <Tab.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{ tabBarLabel: 'Profile' }}
+      />
     </Tab.Navigator>
   );
 };

@@ -31,7 +31,7 @@ export function useLogin(): UseLogin {
       // Simulate API call
       await new Promise(_res => {
         dispatch(setUser(email));
-        dispatch(setFirstLaunchComplete(true));
+        dispatch(setFirstLaunchComplete());
       });
       // Handle successful login here
     } catch (e: any) {

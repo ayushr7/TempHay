@@ -10,6 +10,7 @@ export type AuthStackParamList = {
   ForgotPassword: undefined;
   SignUp: undefined;
 };
+
 const Stack = createStackNavigator<AuthStackParamList>();
 
 const AuthNavigator = () => {
@@ -21,7 +22,6 @@ const AuthNavigator = () => {
       screenOptions={{ headerShown: false }}
       initialRouteName={isFirstLaunch ? 'Welcome' : 'Login'}
     >
-      {/* <Stack.Screen name="FirstPage" component={FirstPage} /> */}
       <Stack.Screen name="Welcome" component={Welcome} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
