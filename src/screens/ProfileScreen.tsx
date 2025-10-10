@@ -10,7 +10,10 @@ import { useAppSelector, useAppDispatch } from '../redux/hooks';
 import { clearUser } from '../redux/slices/userSlice';
 import { Layout, Text } from '@shared/index';
 import SegmentedControl from '@shared/ui/SegmentedControl';
-import { setTheme, updateSystemTheme } from '../redux/slices/themeSlice';
+import {
+  setUserSelectedTheme,
+  updateSystemTheme,
+} from '../redux/slices/themeSlice';
 import { Appearance } from 'react-native';
 import {
   fonts,
@@ -24,6 +27,7 @@ type MenuItemProps = {
   icon?: number | string; // Image source prop type
   text: string;
   onPress: () => void;
+  showArrow?: boolean;
   iconColor?: string;
 };
 
@@ -85,21 +89,16 @@ const SocialMenuItem = React.memo(
 
 const ProfileScreen = () => {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
-  console.log('notificationsEnabled', notificationsEnabled);
   const email = useAppSelector(state => state.user.email);
-  const themeState = useAppSelector(state => state.theme.mode);
+  const themeState = useAppSelector(state => state.theme.userSelectedTheme);
   const dispatch = useAppDispatch();
 
   const { isDark } = useTheme();
-
   // Set the theme selection based on the current theme state
   const [themeSelection, setThemeSelection] = useState<string>(themeState);
 
   // Handle device theme changes when in 'system' mode
   useEffect(() => {
-    // Set initial theme selection based on Redux state
-    setThemeSelection(themeState);
-
     // Listen for system theme changes
     const subscription = Appearance.addChangeListener(({ colorScheme }) => {
       // Update the system theme in Redux
@@ -107,7 +106,12 @@ const ProfileScreen = () => {
     });
 
     return () => subscription.remove();
-  }, [dispatch, themeState]);
+  }, [dispatch]);
+
+  // Update theme selection when themeState changes from Redux
+  useEffect(() => {
+    setThemeSelection(themeState);
+  }, [themeState]);
 
   const handleLogout = () => {
     dispatch(clearUser());
@@ -116,7 +120,7 @@ const ProfileScreen = () => {
   const handleThemeChange = (value: string) => {
     setThemeSelection(value);
     // Dispatch the theme change to Redux
-    dispatch(setTheme(value as 'light' | 'dark' | 'system'));
+    dispatch(setUserSelectedTheme(value as 'light' | 'dark' | 'system'));
   };
 
   // Extract first letter for avatar
@@ -164,7 +168,7 @@ const ProfileScreen = () => {
           <Text style={styles.sectionTitle}>Appearance</Text>
 
           <View style={[styles.menuItem, styles.appearanceContainer]}>
-            <View style={styles.menuItemLeft}>
+            {/* <View style={styles.menuItemLeft}>
               <Image
                 source={IMAGES.dash.info_icon}
                 resizeMode="contain"
@@ -172,13 +176,17 @@ const ProfileScreen = () => {
                 fadeDuration={0}
               />
               <Text style={styles.menuItemText}>Theme</Text>
-            </View>
+            </View> */}
 
             <SegmentedControl
               options={[
-                { label: 'Light', value: 'light' },
-                { label: 'Dark', value: 'dark' },
-                { label: 'System', value: 'system' },
+                { label: 'Light', value: 'light', icon: IMAGES.dash.sun_icon },
+                { label: 'Dark', value: 'dark', icon: IMAGES.dash.moon_icon },
+                {
+                  label: 'System',
+                  value: 'system',
+                  icon: IMAGES.dash.night_mode_icon,
+                },
               ]}
               value={themeSelection}
               onValueChange={handleThemeChange}

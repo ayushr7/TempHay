@@ -24,5 +24,8 @@ export const IMAGES = {
     star_outline: require('./home/star-outline.png'),
     info_icon: require('./home/information-icon.png'),
     right_arrow: require('./home/right-arrow.png'),
+    sun_icon: require('./home/sun-filled.png'),
+    moon_icon: require('./home/moon-filled.png'),
+    night_mode_icon: require('./home/night-mode.png'),
   },
 };

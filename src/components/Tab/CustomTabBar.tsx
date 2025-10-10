@@ -63,7 +63,7 @@ const CustomTabBar: React.FC<BottomTabBarProps> = ({
             color: isFocused
               ? theme.colors.tabActive
               : theme.colors.tabInactive,
-            size: 24,
+            size: moderateScale(24),
           });
         }
 

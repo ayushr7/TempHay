@@ -13,7 +13,7 @@ import { initI18n } from './i18n/i18n';
 import { Provider } from 'react-redux';
 import { store, persistor } from '@redux/store';
 import { useAppDispatch } from '@redux/hooks';
-import { setTheme } from '@redux/slices/themeSlice';
+import { updateSystemTheme } from '@redux/slices/themeSlice';
 import BootSplash from 'react-native-bootsplash';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -38,7 +38,7 @@ const AppContent = () => {
   // the "Automatic Dark/Light Mode" feature fully reactive.
   useEffect(() => {
     const subscription = Appearance.addChangeListener(({ colorScheme }) => {
-      dispatch(setTheme(colorScheme ?? 'light'));
+      dispatch(updateSystemTheme(colorScheme ?? 'light'));
     });
 
     return () => subscription.remove();
