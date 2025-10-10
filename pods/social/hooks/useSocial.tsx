@@ -20,6 +20,8 @@ export interface SocialLoginResult {
   user?: SocialUser;
   provider: SocialProvider;
   error?: string;
+  idToken?: string;
+  accessToken?: string;
 }
 
 interface UseSocialLoginOptions {
@@ -33,8 +35,19 @@ export const useSocial = ({ onResult }: UseSocialLoginOptions = {}) => {
       await GoogleSignin.hasPlayServices({
         showPlayServicesUpdateDialog: true,
       });
-      await GoogleSignin.signIn();
-      const user = GoogleSignin.getCurrentUser()?.user;
+
+      // Sign in and get the result
+      const signInResult = await GoogleSignin.signIn();
+
+      // In newer versions, user data is directly in signInResult.data
+      const user = signInResult.data?.user;
+
+      // Get tokens
+      const tokens = await GoogleSignin.getTokens();
+
+      console.log('ID Token:', tokens.idToken);
+      console.log('User data:', user);
+
       if (user) {
         onResult?.({
           success: true,
@@ -45,6 +58,7 @@ export const useSocial = ({ onResult }: UseSocialLoginOptions = {}) => {
             imageUrl: user.photo || undefined,
           },
           provider: 'google',
+          idToken: tokens.idToken,
         });
       } else {
         throw new Error('Google user info not available');

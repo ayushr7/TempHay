@@ -29,7 +29,7 @@ const AppContent = () => {
   useEffect(() => {
     GoogleSignin.configure({
       webClientId:
-        '749712540931-iqd969jn5jjr0r81mtoc266060eh73nm.apps.googleusercontent.com', // TODO: Replace with your actual web client ID
+        '679844424322-cmhe3odm1t3ij8su1p4oo36tab7q5cia.apps.googleusercontent.com', // TODO: Replace with your actual web client ID
       offlineAccess: false,
     });
   }, []);

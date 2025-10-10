@@ -1,133 +1,102 @@
 {
   "project_info": {
-    "project_number": "749712540931",
-    "project_id": "rnbaseproject-ef8d3",
-    "storage_bucket": "rnbaseproject-ef8d3.firebasestorage.app"
+    "project_number": "679844424322",
+    "project_id": "hayti-e5773",
+    "storage_bucket": "hayti-e5773.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:749712540931:android:81bc59d45837c5f0ed5536",
+        "mobilesdk_app_id": "1:679844424322:android:52ce226b5b4a131afe229b",
         "android_client_info": {
-          "package_name": "com.baseSetup"
+          "package_name": "hayti.com"
         }
       },
       "oauth_client": [
         {
-          "client_id": "749712540931-hnosmvep8n82m2h87sv6n4bq396g8np6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC0uFVerJn7zpmS5CSKIEXJmZCkoqHJIHQ"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "749712540931-hnosmvep8n82m2h87sv6n4bq396g8np6.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "749712540931-ke9n4mlqbc4en3mv5epfa05da11pnkak.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "org.native.example.BaseProject"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:749712540931:android:6b034645935ee844ed5536",
-        "android_client_info": {
-          "package_name": "com.smartdataapprn"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "749712540931-fn4arhbm26j2rsqum66070usgtas110n.apps.googleusercontent.com",
+          "client_id": "679844424322-2ai4re5jga4i55bithboqii65jts65em.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.smartdataapprn",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+            "package_name": "hayti.com",
+            "certificate_hash": "86a6ab0d0d770412eb619dc10f1347acf3b3ec2b"
           }
         },
         {
-          "client_id": "749712540931-odqiuhkcvfef7js04isl38vpksqcth1r.apps.googleusercontent.com",
+          "client_id": "679844424322-2fvnur60f1ma1mrnhrd1i7042p4l5g6s.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.smartdataapprn",
-            "certificate_hash": "fe1039d1d07985e0d53cafde1d5703e15cf26028"
+            "package_name": "hayti.com",
+            "certificate_hash": "5b7d5bf27618286c7f10bd22e4ee15dfbb13b1af"
           }
         },
         {
-          "client_id": "749712540931-hnosmvep8n82m2h87sv6n4bq396g8np6.apps.googleusercontent.com",
+          "client_id": "679844424322-c1opv4jvvkeuf30mtgeh5788stuucfj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hayti.com",
+            "certificate_hash": "3dfc0737f4c1d7649a9f239f669c0842059205e2"
+          }
+        },
+        {
+          "client_id": "679844424322-hkmse4oal09d23pprj1doai9hrdvq16m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hayti.com",
+            "certificate_hash": "ad57e17f70088b04d012f4a2fbd12660c449f6d4"
+          }
+        },
+        {
+          "client_id": "679844424322-j5v8p2i1rdgb77fmk27soeugl3mlp5nt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hayti.com",
+            "certificate_hash": "b4af55f4e2675b4e4382f922bcbc87bc112a320e"
+          }
+        },
+        {
+          "client_id": "679844424322-spalvalfv4e8ilvgflce48pgokv3u9de.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hayti.com",
+            "certificate_hash": "d5ba1b4da4c6c4330bd4fa8e3dc8ad0f19140487"
+          }
+        },
+        {
+          "client_id": "679844424322-ufb8j1uc51va6mfd4k0n1gtko38cdb2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hayti.com",
+            "certificate_hash": "fddb0574af18232caeba110c6f7e19743753fa20"
+          }
+        },
+        {
+          "client_id": "679844424322-d8ppcckg81d3sd3r9ni3i1luoo5epj0e.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0uFVerJn7zpmS5CSKIEXJmZCkoqHJIHQ"
+          "current_key": "AIzaSyDekHBMbIsCMHXucHDbEe97BvRUij7bOAk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "749712540931-hnosmvep8n82m2h87sv6n4bq396g8np6.apps.googleusercontent.com",
+              "client_id": "679844424322-cmhe3odm1t3ij8su1p4oo36tab7q5cia.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "749712540931-ke9n4mlqbc4en3mv5epfa05da11pnkak.apps.googleusercontent.com",
+              "client_id": "679844424322-3pbf9fq1unir2ebe2hoiovgf7gcf883m.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "org.native.example.BaseProject"
+                "bundle_id": "com.Eboni.ios"
               }
             }
           ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:749712540931:android:1ad547b0643f6952ed5536",
-        "android_client_info": {
-          "package_name": "com.smartdataapprn.prod"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "749712540931-hnosmvep8n82m2h87sv6n4bq396g8np6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC0uFVerJn7zpmS5CSKIEXJmZCkoqHJIHQ"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "749712540931-hnosmvep8n82m2h87sv6n4bq396g8np6.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "749712540931-ke9n4mlqbc4en3mv5epfa05da11pnkak.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "org.native.example.BaseProject"
-              }
-            }
-          ]
-        }
-      }
+      "admob_app_id": "ca-app-pub-6251292548311563~5738312530"
     }
   ],
   "configuration_version": "1"
