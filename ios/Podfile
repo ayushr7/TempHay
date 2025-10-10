@@ -35,9 +35,9 @@ if linkage != nil
 end
 
 # Explicitly select Xcode project to avoid auto-detection errors
-project 'smartPlatformRN.xcodeproj'
+project 'Hayti.xcodeproj'
 
-target 'smartPlatformRN' do
+target 'Hayti' do
   config = use_native_modules!
 
   use_react_native!(

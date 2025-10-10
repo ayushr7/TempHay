@@ -1,4 +1,4 @@
-package com.baseSetup
+package hayti.com
 
 import android.app.Application
 import com.facebook.react.PackageList

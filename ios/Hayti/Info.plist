@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>smartPlatformRN</string>
+	<string>Hayti</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,6 +20,15 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.749712540931-a9trmh1u0dmf2vbn1k9urop97d4qhavi</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -37,9 +46,9 @@
 	<string>This app needs access to your location to show you nearby items.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app needs access to your location to show you nearby items.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>[REASON]</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>[REASON]</string>
+	<key>NSPhotoLibraryUsageDescription</key>
 	<string>[REASON]</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
@@ -67,14 +76,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.749712540931-a9trmh1u0dmf2vbn1k9urop97d4qhavi</string>
-			</array>
-		</dict>
-	</array>
 </dict>
 </plist>
